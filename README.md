@@ -334,4 +334,6 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 
 
-[![Star History Chart](https://api.star-history.com/svg?repos=fractal_attention_analysis/fractal_attention_analysis&type=date&legend=top-left)](https://www.star-history.com/#fractal_attention_analysis/fractal_attention_analysis&type=date&legend=top-left)
+## Star History
+
+[![Star History Chart](https://api.star-history.com/svg?repos=fractal_attention_analysis/fractal_attention_analysis&type=timeline&legend=top-left)](https://www.star-history.com/#fractal_attention_analysis/fractal_attention_analysis&type=timeline&legend=top-left)
