@@ -78,7 +78,9 @@ class ModelLoader:
         """
         self.device_manager = device_manager or DeviceManager()
 
-    def load_model(self, model_name: str, force_eager_attention: bool = True, **kwargs) -> Tuple[Any, Any]:
+    def load_model(
+        self, model_name: str, force_eager_attention: bool = True, **kwargs
+    ) -> Tuple[Any, Any]:
         """
         Load a transformer model and tokenizer.
 

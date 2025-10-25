@@ -298,7 +298,9 @@ class FractalAttentionAnalyzer:
 
         return visualizations
 
-    def export_results(self, results: Dict[str, Any], output_path: Path, format: str = "json") -> None:
+    def export_results(
+        self, results: Dict[str, Any], output_path: Path, format: str = "json"
+    ) -> None:
         """
         Export analysis results to file.
 
