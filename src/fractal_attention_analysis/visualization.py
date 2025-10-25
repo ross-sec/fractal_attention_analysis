@@ -299,6 +299,6 @@ class AttentionVisualizer:
         return fig
 
     @staticmethod
-    def close_all():
+    def close_all() -> None:
         """Close all matplotlib figures."""
         plt.close("all")

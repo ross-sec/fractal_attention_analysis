@@ -5,7 +5,7 @@ This module provides helper classes for managing LLM loading and GPU/CPU device 
 """
 
 import warnings
-from typing import Any, Dict, Optional
+from typing import Any, Dict, Optional, Tuple
 
 import torch
 from transformers import AutoModelForCausalLM, AutoTokenizer
@@ -58,7 +58,7 @@ class DeviceManager:
         return config
 
     @staticmethod
-    def log_memory_usage(stage: str = ""):
+    def log_memory_usage(stage: str = "") -> None:
         """Log current GPU memory usage."""
         if torch.cuda.is_available():
             allocated = torch.cuda.memory_allocated() / 1024**3
@@ -78,7 +78,7 @@ class ModelLoader:
         """
         self.device_manager = device_manager or DeviceManager()
 
-    def load_model(self, model_name: str, force_eager_attention: bool = True, **kwargs) -> tuple:
+    def load_model(self, model_name: str, force_eager_attention: bool = True, **kwargs) -> Tuple[Any, Any]:
         """
         Load a transformer model and tokenizer.
 
@@ -161,7 +161,7 @@ class ModelLoader:
         else:
             return 500_000_000  # Default estimate
 
-    def _apply_model_fixes(self, model, model_name: str):
+    def _apply_model_fixes(self, model: Any, model_name: str) -> Any:
         """Apply model-specific configuration fixes."""
         # Fix for Qwen models
         if "qwen" in model_name.lower():
@@ -173,7 +173,7 @@ class ModelLoader:
 
         return model
 
-    def _fallback_load(self, model_name: str, force_eager_attention: bool) -> tuple:
+    def _fallback_load(self, model_name: str, force_eager_attention: bool) -> Tuple[Any, Any]:
         """Fallback loading strategy if main loading fails."""
         print("Attempting CPU fallback loading...")
 

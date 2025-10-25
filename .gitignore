@@ -141,3 +141,5 @@ output/
 !docs/*.png
 !docs/*.jpg
 
+*.tex
+LateX/
