@@ -6,6 +6,7 @@
 
 A mathematical framework for analyzing transformer attention mechanisms using fractal geometry and golden ratio transformations. FAA provides deep insights into how Large Language Models (LLMs) process and attend to information.
 
+
 ## 🌟 Features
 
 - **Universal LLM Support**: Works with any HuggingFace transformer model
@@ -329,3 +330,8 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 **Made with ❤️ by Ross Technologies & Hooking LTD**
 
+
+
+
+
+<iframe style="width:100%;height:auto;min-width:600px;min-height:400px;" src="https://www.star-history.com/embed?secret=Z2l0aHViX3BhdF8xMUJCS1E0R1EwWjFKMHE2MzZUdjNQXzJmOHFQYzVHSXRaZGp2dGZwWEh3ZEdVWHFGZWNkR2FIb3ZEc3VnS1dVa2UyTzVCREJRUFlJZ0tOdWw4#fractal_attention_analysis/fractal_attention_analysis&type=date&legend=top-left" frameBorder="0"></iframe>
