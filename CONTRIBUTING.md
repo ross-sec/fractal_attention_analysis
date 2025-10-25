@@ -44,7 +44,7 @@ git clone https://github.com/YOUR_USERNAME/fractal-attention-analysis.git
 cd fractal-attention-analysis
 
 # Add upstream remote
-git remote add upstream https://github.com/ross-sec/fractal-attention-analysis.git
+git remote add upstream https://github.com/ross-sec/fractal_attention_analysis.git
 
 # Create virtual environment
 python -m venv venv
@@ -372,7 +372,7 @@ We especially welcome contributions in:
 
 ## 📞 Questions?
 
-- Open a [GitHub Discussion](https://github.com/ross-sec/fractal-attention-analysis/discussions)
+- Open a [GitHub Discussion](https://github.com/ross-sec/fractal_attention_analysis/discussions)
 - Email: devops.ross@gmail.com
 
 ## 🙏 Thank You!

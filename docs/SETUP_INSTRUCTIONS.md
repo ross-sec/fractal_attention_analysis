@@ -55,7 +55,7 @@ git add .
 git commit -m "Initial release v0.1.0 - Production-ready FAA framework"
 
 # Add remote (replace with your actual repo URL)
-git remote add origin https://github.com/ross-sec/fractal-attention-analysis.git
+git remote add origin https://github.com/ross-sec/fractal_attention_analysis.git
 
 # Push
 git branch -M main

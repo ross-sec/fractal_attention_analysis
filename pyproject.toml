@@ -80,11 +80,11 @@ all = [
 ]
 
 [project.urls]
-Homepage = "https://github.com/ross-sec/fractal-attention-analysis"
-Documentation = "https://github.com/ross-sec/fractal-attention-analysis#readme"
-Repository = "https://github.com/ross-sec/fractal-attention-analysis"
-"Bug Tracker" = "https://github.com/ross-sec/fractal-attention-analysis/issues"
-Changelog = "https://github.com/ross-sec/fractal-attention-analysis/blob/main/CHANGELOG.md"
+Homepage = "https://github.com/ross-sec/fractal_attention_analysis"
+Documentation = "https://github.com/ross-sec/fractal_attention_analysis#readme"
+Repository = "https://github.com/ross-sec/fractal_attention_analysis"
+"Bug Tracker" = "https://github.com/ross-sec/fractal_attention_analysis/issues"
+Changelog = "https://github.com/ross-sec/fractal_attention_analysis/blob/main/CHANGELOG.md"
 
 [project.scripts]
 faa-analyze = "fractal_attention_analysis.cli:main"

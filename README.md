@@ -227,7 +227,7 @@ The FAA framework is based on:
 
 ```bash
 # Clone repository
-git clone https://github.com/ross-sec/fractal-attention-analysis.git
+git clone https://github.com/ross-sec/fractal_attention_analysis.git
 cd fractal-attention-analysis
 
 # Create virtual environment
@@ -279,7 +279,7 @@ If you use FAA in your research, please cite:
   title={Fractal-Attention Analysis: A Mathematical Framework for LLM Interpretability},
   author={Ross, Andre and Ross, Leorah and Atias, Eyal},
   year={2025},
-  url={https://github.com/ross-sec/fractal-attention-analysis}
+  url={https://github.com/ross-sec/fractal_attention_analysis}
 }
 ```
 
@@ -313,8 +313,8 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 ## 📞 Support
 
-- **Issues**: [GitHub Issues](https://github.com/ross-sec/fractal-attention-analysis/issues)
-- **Discussions**: [GitHub Discussions](https://github.com/ross-sec/fractal-attention-analysis/discussions)
+- **Issues**: [GitHub Issues](https://github.com/ross-sec/fractal_attention_analysis/issues)
+- **Discussions**: [GitHub Discussions](https://github.com/ross-sec/fractal_attention_analysis/discussions)
 - **Email**: devops.ross@gmail.com
 
 ## 🗺️ Roadmap

@@ -54,6 +54,6 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - Architectural independence confirmed
 - Consistent patterns despite model size differences
 
-[Unreleased]: https://github.com/ross-sec/fractal-attention-analysis/compare/v0.1.0...HEAD
-[0.1.0]: https://github.com/ross-sec/fractal-attention-analysis/releases/tag/v0.1.0
+[Unreleased]: https://github.com/ross-sec/fractal_attention_analysis/compare/v0.1.0...HEAD
+[0.1.0]: https://github.com/ross-sec/fractal_attention_analysis/releases/tag/v0.1.0
 

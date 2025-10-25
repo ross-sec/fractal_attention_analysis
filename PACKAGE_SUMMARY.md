@@ -6,7 +6,7 @@
 - **Version**: 0.1.0
 - **License**: MIT
 - **Python**: >=3.8
-- **Repository**: https://github.com/ross-sec/fractal-attention-analysis
+- **Repository**: https://github.com/ross-sec/fractal_attention_analysis
 
 ## 🏗️ Package Structure
 
@@ -135,7 +135,7 @@ pip install fractal-attention-analysis
 
 ### From Source
 ```bash
-git clone https://github.com/ross-sec/fractal-attention-analysis.git
+git clone https://github.com/ross-sec/fractal_attention_analysis.git
 cd fractal-attention-analysis
 pip install -e ".[dev]"
 ```
@@ -224,7 +224,7 @@ pytest tests/test_fractal.py::test_fractal_dimension_range
 
 ### Setup
 ```bash
-git clone https://github.com/ross-sec/fractal-attention-analysis.git
+git clone https://github.com/ross-sec/fractal_attention_analysis.git
 cd fractal-attention-analysis
 python -m venv venv
 source venv/bin/activate  # Windows: venv\Scripts\activate
@@ -280,9 +280,9 @@ MIT License - See LICENSE file
 
 ## 🔗 Links
 
-- **GitHub**: https://github.com/ross-sec/fractal-attention-analysis
-- **Issues**: https://github.com/ross-sec/fractal-attention-analysis/issues
-- **Discussions**: https://github.com/ross-sec/fractal-attention-analysis/discussions
+- **GitHub**: https://github.com/ross-sec/fractal_attention_analysis
+- **Issues**: https://github.com/ross-sec/fractal_attention_analysis/issues
+- **Discussions**: https://github.com/ross-sec/fractal_attention_analysis/discussions
 
 ## 📦 Distribution
 
