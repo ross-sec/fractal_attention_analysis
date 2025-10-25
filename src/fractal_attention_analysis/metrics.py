@@ -5,9 +5,10 @@ This module provides metrics for evaluating attention patterns including
 entropy, sparsity, and interpretability scores.
 """
 
+from typing import Any, Dict, Optional
+
 import numpy as np
 from scipy.stats import entropy as scipy_entropy
-from typing import Dict, Any, Optional
 
 
 class AttentionMetrics:

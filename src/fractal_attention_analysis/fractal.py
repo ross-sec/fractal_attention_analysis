@@ -5,9 +5,10 @@ This module implements the mathematical foundations of fractal analysis
 including golden ratio transformations and fractal dimension calculations.
 """
 
-import numpy as np
 import math
-from typing import Tuple, List, Optional
+from typing import List, Optional, Tuple
+
+import numpy as np
 
 
 class FractalTransforms:

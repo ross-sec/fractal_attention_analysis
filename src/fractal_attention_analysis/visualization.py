@@ -5,11 +5,12 @@ This module provides functions for visualizing attention matrices,
 fractal patterns, and analysis results.
 """
 
-import numpy as np
-import matplotlib.pyplot as plt
-import seaborn as sns
-from typing import Optional, List, Tuple, Dict, Any
 from pathlib import Path
+from typing import Any, Dict, List, Optional, Tuple
+
+import matplotlib.pyplot as plt
+import numpy as np
+import seaborn as sns
 
 
 class AttentionVisualizer:

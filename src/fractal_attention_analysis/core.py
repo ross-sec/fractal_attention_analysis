@@ -5,16 +5,17 @@ This module provides the main FractalAttentionAnalyzer class that integrates
 all components of the FAA framework.
 """
 
-import torch
-import numpy as np
 import time
-from typing import Optional, Dict, Any, List, Tuple
 from pathlib import Path
+from typing import Any, Dict, List, Optional, Tuple
+
+import numpy as np
+import torch
 
 from .fractal import FractalTransforms
 from .metrics import AttentionMetrics
+from .utils import DeviceManager, ModelLoader
 from .visualization import AttentionVisualizer
-from .utils import ModelLoader, DeviceManager
 
 
 class FractalAttentionAnalyzer:
@@ -307,6 +308,7 @@ class FractalAttentionAnalyzer:
             format: Output format ('json', 'csv', or 'npz')
         """
         import json
+
         import pandas as pd
 
         output_path = Path(output_path)

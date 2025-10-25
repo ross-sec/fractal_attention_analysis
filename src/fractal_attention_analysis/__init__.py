@@ -16,8 +16,8 @@ __license__ = "MIT"
 from .core import FractalAttentionAnalyzer
 from .fractal import FractalTransforms
 from .metrics import AttentionMetrics
+from .utils import DeviceManager, ModelLoader
 from .visualization import AttentionVisualizer
-from .utils import ModelLoader, DeviceManager
 
 __all__ = [
     "FractalAttentionAnalyzer",

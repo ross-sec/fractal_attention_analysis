@@ -2,6 +2,7 @@
 
 import numpy as np
 import pytest
+
 from fractal_attention_analysis.fractal import FractalTransforms
 
 
