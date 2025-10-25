@@ -14,7 +14,7 @@ from transformers import AutoModelForCausalLM, AutoTokenizer
 class DeviceManager:
     """Manages device allocation and memory for model inference."""
 
-    def __init__(self, prefer_gpu: bool = True, max_gpu_memory_gb: int = 20):
+    def __init__(self, prefer_gpu: bool = True, max_gpu_memory_gb: int = 20) -> None:
         """
         Initialize device manager.
 
@@ -42,7 +42,7 @@ class DeviceManager:
         Returns:
             Dictionary with device configuration
         """
-        config = {}
+        config: Dict[str, Any] = {}
 
         if not torch.cuda.is_available():
             return config
@@ -69,7 +69,7 @@ class DeviceManager:
 class ModelLoader:
     """Handles loading and configuration of transformer models."""
 
-    def __init__(self, device_manager: Optional[DeviceManager] = None):
+    def __init__(self, device_manager: Optional[DeviceManager] = None) -> None:
         """
         Initialize model loader.
 
@@ -116,7 +116,7 @@ class ModelLoader:
             print(f"Error loading model with device mapping: {e}")
             return self._fallback_load(model_name, force_eager_attention)
 
-    def _load_tokenizer(self, model_name: str) -> AutoTokenizer:
+    def _load_tokenizer(self, model_name: str) -> Any:
         """Load and configure tokenizer."""
         tokenizer = AutoTokenizer.from_pretrained(model_name)
 
@@ -188,7 +188,7 @@ class ModelLoader:
         model = AutoModelForCausalLM.from_pretrained(model_name, **model_kwargs)
 
         if torch.cuda.is_available():
-            model = model.to("cuda")
+            model = model.to("cuda")  # type: ignore[arg-type]
             print("Model moved to GPU (CPU fallback)")
         else:
             print("Model loaded on CPU")

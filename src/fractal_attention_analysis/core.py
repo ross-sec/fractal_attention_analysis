@@ -38,7 +38,7 @@ class FractalAttentionAnalyzer:
         device_manager: Optional[DeviceManager] = None,
         force_eager_attention: bool = True,
         **model_kwargs,
-    ):
+    ) -> None:
         """
         Initialize the Fractal-Attention Analyzer.
 
@@ -220,7 +220,7 @@ class FractalAttentionAnalyzer:
         if attention_weights.dtype == np.float16:
             attention_weights = attention_weights.astype(np.float32)
 
-        return attention_weights
+        return attention_weights  # type: ignore[no-any-return]
 
     def _create_synthetic_attention(self, seq_len: int) -> np.ndarray:
         """Create synthetic attention for testing/fallback."""
@@ -233,7 +233,7 @@ class FractalAttentionAnalyzer:
 
         # Normalize
         attention = attention / attention.sum(axis=1, keepdims=True)
-        return attention
+        return attention  # type: ignore[no-any-return]
 
     def _fractal_analysis(self, attention_weights: np.ndarray) -> Dict[str, Any]:
         """Perform fractal analysis on attention weights."""

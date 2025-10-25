@@ -16,7 +16,7 @@ import seaborn as sns
 class AttentionVisualizer:
     """Visualizes attention patterns and fractal analysis results."""
 
-    def __init__(self, style: str = "seaborn-v0_8-darkgrid"):
+    def __init__(self, style: str = "seaborn-v0_8-darkgrid") -> None:
         """
         Initialize visualizer.
 
@@ -278,7 +278,7 @@ class AttentionVisualizer:
 
         fig, ax = plt.subplots(figsize=(10, 6))
 
-        colors = plt.cm.viridis(np.linspace(0.3, 0.9, top_k))
+        colors = plt.cm.viridis(np.linspace(0.3, 0.9, top_k))  # type: ignore[attr-defined]
         bars = ax.barh(range(top_k), top_scores, color=colors)
 
         ax.set_yticks(range(top_k))

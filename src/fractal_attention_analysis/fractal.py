@@ -23,7 +23,7 @@ class FractalTransforms:
     D_DRAGON = 2.0  # Dragon curve
     D_NEURAL = (PHI**2) / 2  # Neural fractal dimension
 
-    def __init__(self, phi: Optional[float] = None):
+    def __init__(self, phi: Optional[float] = None) -> None:
         """
         Initialize fractal transforms.
 
@@ -120,7 +120,7 @@ class FractalTransforms:
         coeffs = np.polyfit(log_scales, log_counts, 1)
         dimension = -coeffs[0]
 
-        return dimension
+        return float(dimension)
 
     def _box_count(self, binary_matrix: np.ndarray, box_size: int) -> int:
         """Count non-empty boxes at given scale."""
@@ -140,7 +140,7 @@ class FractalTransforms:
         reshaped = sliced.reshape(n_boxes, box_size, m_boxes, box_size)
         box_sums = reshaped.sum(axis=(1, 3))
 
-        return np.count_nonzero(box_sums)
+        return int(np.count_nonzero(box_sums))
 
     def multi_scale_analysis(
         self, attention_matrix: np.ndarray, num_scales: int = 5
@@ -196,7 +196,7 @@ class FractalTransforms:
 
         correlation = np.corrcoef(resized.flatten(), downsampled.flatten())[0, 1]
 
-        return abs(correlation)
+        return float(abs(correlation))
 
     def golden_ratio_scoring(self, attention_weights: np.ndarray) -> np.ndarray:
         """
@@ -218,4 +218,4 @@ class FractalTransforms:
         # Apply to attention
         scored = attention_weights * golden_weights.reshape(-1, 1)
 
-        return scored
+        return scored  # type: ignore[no-any-return]

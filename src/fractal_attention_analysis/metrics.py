@@ -14,7 +14,7 @@ from scipy.stats import entropy as scipy_entropy
 class AttentionMetrics:
     """Computes various metrics for attention analysis."""
 
-    def __init__(self):
+    def __init__(self) -> None:
         """Initialize attention metrics calculator."""
         self.epsilon = 1e-10  # Small constant to avoid log(0)
 
@@ -33,7 +33,7 @@ class AttentionMetrics:
         flat = flat + self.epsilon  # Avoid log(0)
         flat = flat / flat.sum()
 
-        return scipy_entropy(flat)
+        return float(scipy_entropy(flat))
 
     def compute_sparsity(self, attention_weights: np.ndarray, threshold: float = 0.01) -> float:
         """
@@ -72,7 +72,7 @@ class AttentionMetrics:
         if total_attention == 0:
             return 0.0
 
-        return top_k_attention / total_attention
+        return float(top_k_attention / total_attention)
 
     def compute_uniformity(self, attention_weights: np.ndarray) -> float:
         """
@@ -97,7 +97,7 @@ class AttentionMetrics:
         # Convert to similarity (0-1)
         uniformity = np.exp(-kl_div)
 
-        return uniformity
+        return float(uniformity)
 
     def compute_entropy_reduction(
         self, original_attention: np.ndarray, transformed_attention: np.ndarray
